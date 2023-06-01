@@ -1,0 +1,37 @@
+{
+  "generator-jhipster": {
+    "promptValues": {
+      "packageName": "com.limitsservice"
+    },
+    "jhipsterVersion": "6.4.0",
+    "applicationType": "microservice",
+    "baseName": "limitsService",
+    "packageName": "com.limitsservice",
+    "packageFolder": "com/limitsservice",
+    "serverPort": "8081",
+    "authenticationType": "jwt",
+    "cacheProvider": "hazelcast",
+    "enableHibernateCache": true,
+    "websocket": false,
+    "databaseType": "sql",
+    "devDatabaseType": "mysql",
+    "prodDatabaseType": "mysql",
+    "searchEngine": false,
+    "messageBroker": false,
+    "serviceDiscoveryType": "eureka",
+    "buildTool": "maven",
+    "enableSwaggerCodegen": false,
+    "jwtSecretKey": "MGMyYzY5MjZlY2Q4ZTQzMTVmNDRkYjYyMjUzZTRkMDk0ZWE5NWE1ZGUwZWQ1MGY4ZTRkYzYyNDhlMjc1NDE2MjQwOTk4NDhlNDZkZTZiYjRmNTUzMTNjNzE2YWJkZjI1YTQ1YTI5NmVlZWZiYjRiNDU0NjUyNWQ5MTFjOTRhM2E=",
+    "embeddableLaunchScript": false,
+    "testFrameworks": [],
+    "jhiPrefix": "jhi",
+    "entitySuffix": "",
+    "dtoSuffix": "DTO",
+    "otherModules": [],
+    "enableTranslation": false,
+    "clientPackageManager": "npm",
+    "blueprints": [],
+    "skipClient": true,
+    "skipUserManagement": true
+  }
+}
