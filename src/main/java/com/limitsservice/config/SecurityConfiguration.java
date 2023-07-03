@@ -27,7 +27,7 @@ public class SecurityConfiguration extends WebSecurityConfigurerAdapter {
         this.tokenProvider = tokenProvider;
         this.problemSupport = problemSupport;
     }
-    }
+
 
     @Override
     public void configure(HttpSecurity http) throws Exception {
@@ -53,12 +53,17 @@ public class SecurityConfiguration extends WebSecurityConfigurerAdapter {
             .sessionCreationPolicy(SessionCreationPolicy.STATELESS)
         .and()
             .authorizeRequests()
+            .antMatchers("/v2/api-docs").permitAll()
             .antMatchers("/api/authenticate").permitAll()
+            .antMatchers("/api/limits").permitAll()
+            .antMatchers("/api/test").permitAll()
             .antMatchers("/api/**").authenticated()
             .antMatchers("/management/health").permitAll()
             .antMatchers("/management/info").permitAll()
             .antMatchers("/management/prometheus").permitAll()
             .antMatchers("/management/**").hasAuthority(AuthoritiesConstants.ADMIN)
+            .antMatchers("/courseresource/instructors/**/courses").hasAuthority(AuthoritiesConstants.ADMIN)
+
         .and()
             .apply(securityConfigurerAdapter());
         // @formatter:on
