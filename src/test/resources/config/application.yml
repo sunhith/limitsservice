@@ -47,7 +47,7 @@ spring:
       hibernate.cache.use_second_level_cache: false
       hibernate.cache.use_query_cache: false
       hibernate.generate_statistics: false
-      hibernate.hbm2ddl.auto: validate
+#      hibernate.hbm2ddl.auto: validate
       hibernate.jdbc.time_zone: UTC
   liquibase:
     contexts: test
@@ -117,3 +117,6 @@ jhipster:
 # ===================================================================
 
 # application:
+test:
+  text:
+    message: Hi limits service dev!

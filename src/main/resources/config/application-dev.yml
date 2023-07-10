@@ -21,7 +21,7 @@ logging:
 
 eureka:
   instance:
-    prefer-ip-address: true
+    prefer-ip-address: false
   client:
     service-url:
       defaultZone: http://admin:${jhipster.registry.password}@localhost:8761/eureka/
@@ -156,4 +156,4 @@ jhipster:
 
 test:
   text:
-    message: Hi sunny!
+    message: Hi limits service dev!
